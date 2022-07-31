@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+#container {
+    display: flex;
+    height: 100vh;
+}
+.card {
+    background-color: rgb(37, 37, 37);
+    width: 400px;
+    height: 200px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 1px 6px 10px 1px rgba(255, 255, 255, 0.19);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#stars {
+    margin-bottom: 40px;
+}
+#stars img {
+    width: 30px;
+    filter: invert(48%) sepia(0%) saturate(115%) hue-rotate(221deg) brightness(104%) contrast(92%);
+}
+#stars img:first-child, #stars .active{
+    filter: invert(100%) sepia(84%) saturate(2751%) hue-rotate(358deg) brightness(104%) contrast(107%);
+}
+
+#emojis {
+    padding: 40px;
+    transition: all ease-in 2s;
+}
+
+#emojis img {
+    filter: invert(100%) sepia(84%) saturate(2751%) hue-rotate(358deg) brightness(104%) contrast(107%);
+    width: 40px;
+    display: none;
+}
+
+#show-emoji{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+} 
